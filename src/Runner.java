@@ -1,17 +1,13 @@
-import Struct.RackForClothes;
-import Struct.Shop;
-import Struct.clothes.Coat;
-import Struct.clothes.Coats;
-import Struct.clothes.OuterWear;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import Struct.WhoLivesIn;
+import Struct.Flate;
+import Struct.clothes.Dog;
+import Struct.clothes.Resident;
+import Struct.clothes.ResidentApartments;
 
 public class Runner {
 
     public static void main(String[] args) {
-        Shop shop = new Shop(new RackForClothes(new OuterWear(new Coats(new Coat("blue")))));
-        System.out.println(shop.toString());
+        Flate flate = new Flate(new WhoLivesIn(new ResidentApartments(new Resident(new Dog("grey")))));
+        System.out.println(flate.toString());
     }
 }

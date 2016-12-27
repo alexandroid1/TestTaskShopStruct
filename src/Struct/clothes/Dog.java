@@ -3,14 +3,14 @@ package Struct.clothes;
 /**
  * Created by Oleksandr on 27.12.2016.
  */
-public class Coat {
+public class Dog {
 
     private String Color;
 
-    public Coat() {
+    public Dog() {
     }
 
-    public Coat(String color) {
+    public Dog(String color) {
         this.Color = color;
     }
 
@@ -24,7 +24,7 @@ public class Coat {
 
     @Override
     public String toString() {
-        return "Coat{" +
+        return "Dog{" +
                 "Color='" + Color + '\'' +
                 '}';
     }
