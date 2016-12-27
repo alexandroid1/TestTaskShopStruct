@@ -19,5 +19,10 @@ public class Shop {
         this.rackForClothes = rackForClothes;
     }
 
-
+    @Override
+    public String toString() {
+        return "Shop{" +
+                "rackForClothes=" + rackForClothes +
+                '}';
+    }
 }
