@@ -11,7 +11,13 @@ import java.util.List;
 public class Runner {
 
     public static void main(String[] args) {
-        Shop shop = new Shop(new RackForClothes(new OuterWear(new Coats(new Coat("blue")))));
+
+        List<RackForClothes> lstRackForClothes = new ArrayList<RackForClothes>();
+        lstRackForClothes.add(new RackForClothes(new OuterWear(new Coats(new Coat("red")))));
+        lstRackForClothes.add(new RackForClothes(new OuterWear(new Coats(new Coat("green")))));
+        lstRackForClothes.add(new RackForClothes(new OuterWear(new Coats(new Coat("blue")))));
+
+        Shop shop = new Shop(lstRackForClothes);
         System.out.println(shop.toString());
     }
 }
